@@ -1,6 +1,6 @@
-# Piano Tiles Bot 🎹
+# Don't Tap Game Bot �
 
-Automated bot for Piano Tiles (Don't Tap the White Tile) style games using pixel detection and Windows API for fast clicking.
+Automated bot for "Don't Tap the White Tile" browser game using pixel detection and Windows API for fast clicking.
 
 ## Features
 
@@ -8,7 +8,7 @@ Automated bot for Piano Tiles (Don't Tap the White Tile) style games using pixel
 - **Fast Win32 API Clicking**: Uses `win32api` for faster mouse events than PyAutoGUI
 - **Grid-Based System**: Checks a 4x4 grid of tile positions
 - **Keyboard Control**: Press 'Q' to stop the bot at any time
-- **Zero Latency**: Optimized for speed with minimal delay
+- **Optimized Performance**: Minimal delay between detections and clicks
 
 ## How It Works
 
@@ -31,7 +31,7 @@ pip install pyautogui pywin32 keyboard
 
 ## Usage
 
-1. Open a Piano Tiles game in your browser
+1. Open the Don't Tap game in your browser
 2. Adjust coordinates in the script to match your screen resolution
 3. Run the script:
 

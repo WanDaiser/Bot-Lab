@@ -12,10 +12,9 @@ A collection of Python automation bots demonstrating computer vision, pixel dete
 Advanced computer vision bot using OpenCV template matching and custom Non-Maximum Suppression algorithm.
 
 **Technologies:** OpenCV, NumPy, PIL, PyAutoGUI  
-**Complexity:** ⭐⭐⭐⭐⭐  
 **[View Project →](./number-memory-bot/)**
 
-**Highlights:**
+**Key Features:**
 - Custom NMS algorithm for duplicate elimination
 - Template-based digit recognition
 - Confidence scoring system
@@ -23,15 +22,14 @@ Advanced computer vision bot using OpenCV template matching and custom Non-Maxim
 
 ---
 
-### 🎹 Piano Tiles Bot
+### � Don't Tap Game Bot
 
 Pixel-based automation using Win32 API for ultra-fast tile detection and clicking.
 
 **Technologies:** PyAutoGUI, win32api, keyboard  
-**Complexity:** ⭐⭐⭐⭐  
 **[View Project →](./piano-tiles-bot/)**
 
-**Highlights:**
+**Key Features:**
 - Win32 API for low-latency clicks
 - 4x4 grid monitoring system
 - Real-time pixel detection
@@ -44,10 +42,9 @@ Pixel-based automation using Win32 API for ultra-fast tile detection and clickin
 Selenium-based web automation for 10-finger typing practice.
 
 **Technologies:** Selenium, ChromeDriver, XPath  
-**Complexity:** ⭐⭐⭐  
 **[View Project →](./typing-automation/)**
 
-**Highlights:**
+**Key Features:**
 - Dynamic XPath element selection
 - Browser automation
 - Configurable typing speed

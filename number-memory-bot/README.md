@@ -84,9 +84,9 @@ def non_max_suppression(detections, min_distance=15):
 [DEBUG] Digit 4 found at (512, 300) with confidence 0.892
 [DEBUG] Digit 2 found at (568, 302) with confidence 0.871
 [DEBUG] Digit 7 found at (624, 298) with confidence 0.903
-Tespit edilen sayı: 427
-Toplam rakam sayısı: 3
-İşlem tamamlandı!
+Detected number: 427
+Total digits: 3
+Process completed!
 ```
 
 ## Educational Purpose
