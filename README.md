@@ -1,6 +1,4 @@
-# Game Automation Bots C### Don't Tap Game Bot
-
-Pixel-based automation using Win32 API for ultra-fast tile detection and clicking.ection
+# Game Automation Bots Collection
 
 A collection of Python automation bots demonstrating computer vision, pixel detection, and web automation techniques for various browser-based games.
 
