@@ -24,22 +24,7 @@ Advanced computer vision bot using OpenCV template matching and custom Non-Maxim
 
 ---
 
-### 2048 Game Solver
-
-Heuristic-based puzzle solver with color detection and automated gameplay.
-
-**Technologies:** PyAutoGUI, Python algorithms  
-**[View Project →](./2048-game-solver/)**
-
-**Key Features:**
-- Color-based grid state reading
-- Heuristic evaluation algorithm
-- Corner strategy optimization
-- Real-time move execution
-
----
-
-### � Don't Tap Game Bot
+### Don't Tap Game Bot
 
 Pixel-based automation using Win32 API for ultra-fast tile detection and clicking.
 
@@ -114,13 +99,6 @@ cd number-memory-bot
 python numbermemory.py
 ```
 
-### 2048 Game Solver
-
-```bash
-cd 2048-game-solver
-python solver2048.py
-```
-
 ### Don't Tap Game Bot
 
 ```bash
@@ -151,10 +129,6 @@ game-automation-bots/
 │       ├── 0/
 │       ├── 1/
 │       └── ...
-│
-├── 2048-game-solver/
-│   ├── README.md
-│   └── solver2048.py
 │
 ├── piano-tiles-bot/
 │   ├── README.md
@@ -220,10 +194,10 @@ Contributions are welcome! Feel free to:
 ## Roadmap
 
 Future enhancements:
-- Implement expectimax algorithm for 2048
 - Add Monte Carlo tree search
 - Create more game solvers
 - Improve AI decision making
+- Advanced computer vision techniques
 
 ## License
 
