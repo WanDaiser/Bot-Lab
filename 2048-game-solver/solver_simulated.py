@@ -276,7 +276,7 @@ def press_key(direction):
         'down': Key.down
     }
     keyboard.press(keys[direction])
-    time.sleep(0.05)
+    time.sleep(0.03)
     keyboard.release(keys[direction])
 
 def main():
@@ -289,11 +289,11 @@ def main():
     
     print("Open play2048.co and start a game.")
     print("\nIMPORTANT: Click on the game board to focus it!")
-    print("The bot will start in 5 seconds.")
+    print("The bot will start in 3 seconds.")
     print("Press Ctrl+C to stop anytime.")
     print("="*50)
     
-    for i in range(5, 0, -1):
+    for i in range(3, 0, -1):
         print(f"Starting in {i}...")
         time.sleep(1)
     
@@ -330,7 +330,7 @@ def main():
         press_key(move)
         
         # Wait for animation to complete
-        time.sleep(0.3)
+        time.sleep(0.15)
         
         # Check for high score
         max_tile = max(max(row) for row in grid)
