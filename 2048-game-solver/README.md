@@ -1,80 +1,60 @@
 # 2048 Game Solver
 
-Automated solver for the 2048 puzzle game on play2048.co using PyAutoGUI and heuristic-based decision making.
+Automated solver for the 2048 puzzle game on play2048.co using screen reading and heuristic-based AI.
+
+**Pre-calibrated for 1680x1050 resolution**
 
 ## Features
 
-- **Color-Based Grid Reading**: Reads game state by sampling tile colors
-- **Heuristic Evaluation**: Uses multiple strategies to evaluate board positions
-- **Greedy Algorithm**: Chooses moves based on board evaluation scores
-- **Corner Strategy**: Prioritizes keeping high-value tiles in corners
+- **Screen Reading**: Captures game state by sampling pixel colors at pre-calibrated coordinates
+- **Heuristic AI**: Uses multiple strategies to evaluate board positions
+- **Greedy Algorithm**: Selects moves based on board evaluation scores
+- **Corner Strategy**: Keeps high-value tiles in corners
 - **Monotonicity Preference**: Favors ordered tile arrangements
+- **System-Level Input**: Uses pynput for reliable keyboard control
 - **Real-time Gameplay**: Automated move execution with visual feedback
 
 ## How It Works
 
-1. **Grid Detection**: Samples pixel colors at tile centers to identify values
+1. **Grid Reading**: Samples pixel colors at tile centers to identify values
 2. **State Evaluation**: Analyzes board using multiple heuristics:
    - Corner occupation (high values in corners)
    - Monotonicity (ordered sequences)
    - Empty cell count
    - Merge potential
 3. **Move Selection**: Evaluates all possible moves and chooses the best
-4. **Execution**: Simulates arrow key presses to play the game
+4. **Execution**: Presses arrow keys to play the game
 
 ## Technology Stack
 
-- **PyAutoGUI**: Screen reading and keyboard control
+- **PyAutoGUI**: Screen pixel reading
+- **pynput**: System-level keyboard control
 - **Python Built-ins**: Grid manipulation and algorithm implementation
 
 ## Installation
 
 ```bash
-pip install pyautogui
+pip install pyautogui pynput
 ```
 
 ## Usage
 
-1. Open [play2048.co](https://play2048.co/) in your browser
-2. Position the game window appropriately on your screen
+1. Open [play2048.co](https://play2048.co/) in your browser at **1680x1050 resolution**
+2. Start a new game
 3. Run the solver:
 
 ```bash
-python solver2048.py
+python solver_simulated.py
 ```
 
-4. The bot will:
-   - Wait 3 seconds for positioning
-   - Read the grid state
-   - Calculate optimal moves
-   - Play automatically until game over
+4. Click on the game board when prompted (for keyboard focus)
+5. The bot will:
+   - Read the grid from screen in real-time
+   - Calculate optimal moves using heuristics
+   - Press arrow keys automatically
+   - Play until game over
 
-## Configuration
-
-Adjust these constants if your screen resolution differs:
-
-```python
-TILE_SIZE = 107           # Size of each tile in pixels
-GRID_START_X = 538        # X coordinate of top-left tile center
-GRID_START_Y = 253        # Y coordinate of top-left tile center
-```
-
-### Finding Your Coordinates
-
-Use this snippet to find tile positions:
-
-```python
-import pyautogui
-import time
-
-time.sleep(3)
-x, y = pyautogui.position()
-print(f"X: {x}, Y: {y}")
-color = pyautogui.pixel(x, y)
-print(f"Color: {color}")
-```
-
-Position your mouse over a tile center and run the script.
+**Note**: This solver is pre-calibrated for 1680x1050 screen resolution. If you use a different resolution, you may need to adjust the tile coordinates in `solver_simulated.py`.
 
 ## Algorithm Details
 
