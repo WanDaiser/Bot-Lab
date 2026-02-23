@@ -1,0 +1,13 @@
+# Computer Vision (Number Memory Bot)
+opencv-python>=4.8.0
+numpy>=1.24.0
+pillow>=10.0.0
+pyautogui>=0.9.54
+
+# Pixel Detection (Piano Tiles Bot)
+pywin32>=306
+keyboard>=0.13.5
+
+# Web Automation (Typing Bot)
+selenium>=4.15.0
+webdriver-manager>=4.0.0
