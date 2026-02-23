@@ -1,4 +1,4 @@
-# Number Memory Bot 🧠
+# Number Memory Bot
 
 Advanced computer vision bot that automatically solves the [Human Benchmark Number Memory](https://humanbenchmark.com/tests/number-memory) game using OpenCV template matching.
 

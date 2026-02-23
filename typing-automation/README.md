@@ -1,4 +1,4 @@
-# Typing Practice Automation ⌨️
+# Typing Practice Automation
 
 Selenium-based automation script for practicing 10-finger typing on Turkish typing practice websites.
 

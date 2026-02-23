@@ -1,4 +1,6 @@
-# Don't Tap Game Bot �
+# Don't Tap Game Bot
+
+Automated bot for "Don't Tap the White Tile" browser game using pixel detection and Windows API for fast clicking.on't Tap Game Bot �
 
 Automated bot for "Don't Tap the White Tile" browser game using pixel detection and Windows API for fast clicking.
 

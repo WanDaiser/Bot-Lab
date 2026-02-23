@@ -1,4 +1,6 @@
-# Game Automation Bots Collection 🎮🤖
+# Game Automation Bots C### Don't Tap Game Bot
+
+Pixel-based automation using Win32 API for ultra-fast tile detection and clicking.ection
 
 A collection of Python automation bots demonstrating computer vision, pixel detection, and web automation techniques for various browser-based games.
 
@@ -7,7 +9,7 @@ A collection of Python automation bots demonstrating computer vision, pixel dete
 
 ## Projects Overview
 
-### 🧠 Number Memory Bot ⭐ (Featured)
+### Number Memory Bot (Featured)
 
 Advanced computer vision bot using OpenCV template matching and custom Non-Maximum Suppression algorithm.
 
@@ -19,6 +21,21 @@ Advanced computer vision bot using OpenCV template matching and custom Non-Maxim
 - Template-based digit recognition
 - Confidence scoring system
 - Automated 50-round gameplay
+
+---
+
+### 2048 Game Solver
+
+Heuristic-based puzzle solver with color detection and automated gameplay.
+
+**Technologies:** PyAutoGUI, Python algorithms  
+**[View Project →](./2048-game-solver/)**
+
+**Key Features:**
+- Color-based grid state reading
+- Heuristic evaluation algorithm
+- Corner strategy optimization
+- Real-time move execution
 
 ---
 
@@ -37,7 +54,7 @@ Pixel-based automation using Win32 API for ultra-fast tile detection and clickin
 
 ---
 
-### ⌨️ Typing Practice Automation
+### Typing Practice Automation
 
 Selenium-based web automation for 10-finger typing practice.
 
@@ -97,7 +114,14 @@ cd number-memory-bot
 python numbermemory.py
 ```
 
-### Piano Tiles Bot
+### 2048 Game Solver
+
+```bash
+cd 2048-game-solver
+python solver2048.py
+```
+
+### Don't Tap Game Bot
 
 ```bash
 cd piano-tiles-bot
@@ -120,13 +144,17 @@ game-automation-bots/
 ├── requirements.txt             # All dependencies
 ├── .gitignore                   # Git ignore rules
 │
-├── number-memory-bot/           # ⭐ Featured Project
+├── number-memory-bot/           # Featured Project
 │   ├── README.md
 │   ├── numbermemory.py
 │   └── templates/               # Digit templates (0-9)
 │       ├── 0/
 │       ├── 1/
 │       └── ...
+│
+├── 2048-game-solver/
+│   ├── README.md
+│   └── solver2048.py
 │
 ├── piano-tiles-bot/
 │   ├── README.md
@@ -136,26 +164,6 @@ game-automation-bots/
     ├── README.md
     └── otoyazar.py
 ```
-
-## Features & Techniques
-
-### Computer Vision
-- ✅ Template Matching (cv2.matchTemplate)
-- ✅ Image Processing (grayscale conversion, array manipulation)
-- ✅ Custom NMS Algorithm
-- ✅ Confidence Thresholding
-
-### Automation
-- ✅ Screen Capture (PIL ImageGrab)
-- ✅ Mouse Control (PyAutoGUI, win32api)
-- ✅ Keyboard Events (keyboard module)
-- ✅ Browser Control (Selenium WebDriver)
-
-### Algorithms
-- ✅ Non-Maximum Suppression
-- ✅ Grid-based Detection
-- ✅ XPath Element Selection
-- ✅ Real-time Pixel Monitoring
 
 ## Educational Value
 
@@ -183,10 +191,10 @@ These projects demonstrate:
 
 ## Use Cases
 
-- 🎓 **Learning**: Understand automation and CV concepts
-- 💼 **Portfolio**: Showcase technical skills to employers
-- 🔬 **Research**: Study game automation techniques
-- 🎯 **Practice**: Improve Python programming skills
+- **Learning**: Understand automation and CV concepts
+- **Portfolio**: Showcase technical skills to employers
+- **Research**: Study game automation techniques
+- **Practice**: Improve Python programming skills
 
 ## Disclaimer
 
@@ -211,11 +219,11 @@ Contributions are welcome! Feel free to:
 
 ## Roadmap
 
-Planned projects:
-- [ ] PyAutoGUI-based automation bot (coming soon)
-- [ ] 2048 Game Solver
-- [ ] Tic-Tac-Toe AI
-- [ ] Memory Card Game Bot
+Future enhancements:
+- Implement expectimax algorithm for 2048
+- Add Monte Carlo tree search
+- Create more game solvers
+- Improve AI decision making
 
 ## License
 
@@ -228,6 +236,6 @@ GitHub: [@WanDaiser](https://github.com/WanDaiser)
 
 ---
 
-⭐ If you find this project useful, please consider giving it a star on GitHub!
+If you find this project useful, please consider giving it a star on GitHub!
 
 **Note:** Always use automation tools responsibly and in accordance with applicable terms of service.
